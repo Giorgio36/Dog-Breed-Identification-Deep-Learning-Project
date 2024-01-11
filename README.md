@@ -5,7 +5,7 @@ This application can be useful to help recognize people the different breeds of 
 For the development of this project, transfer learning has been taken advantage of, the followings pretrained models from Keras applications have been considered: InceptionResNetV2, ResNet50V2, VGG16, InceptionV3.
 
 ## Data
-The data used is the Stanford Dog Breed dataset collected from Kaggle, with data available for 120 breeds. This data includes between 60 and 120 images for each different breed. The training set consists of a total of 10222 images, the test is not going to be used, validations would be performed in the validation set extracted from the training set and the final test would be trying to predict Kimi’s, my dog, breed. The data can be downloaded here: Dog Breed Identification | Kaggle
+The data used is the Stanford Dog Breed dataset collected from Kaggle, with data available for 120 breeds. This data includes between 60 and 120 images for each different breed. The training set consists of a total of 10222 images, the test is not going to be used, validations would be performed in the validation set extracted from the training set and the final test would be trying to predict Kimi’s, my dog, breed. The data can be downloaded here: https://www.kaggle.com/competitions/dog-breed-identification/data
 
 ## EDA
 To prepare the data for the training process, it was necessary to: check how many training images for each breed were available, create an ImageDataGenerator object to generate augmentation in the training images, split the data between training and validation sets, normalize the pixel values for each RGB color between 0 and 1, dividing the values by 255.
